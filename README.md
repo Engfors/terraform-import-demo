@@ -115,3 +115,11 @@ Plan: 3 to import, 0 to add, 1 to change, 0 to destroy.
 Now go to HCP vault and refresh the page to see the new version of the secret!
 
 Feel free to play around with this and update the code in the `terraform-create` and `terraform-import` folder, if you are running the plus plan in your organisation you can also trigger a health check to discover [terraform drift](https://www.hashicorp.com/campaign/drift-detection-for-terraform-cloud).
+
+## Cleanup
+
+When you are done with this demo, all you have to do is to [trigger a destroy plan](https://developer.hashicorp.com/terraform/tutorials/cloud-get-started/cloud-destroy) in the `terraform-base` workspace and the Vault cluster and the HVN will be removed from HCP.
+
+## Authors
+
+**Emil Engfors** - *Initial work*
